@@ -1,0 +1,63 @@
+Exercici 1
+
+
+
+Fragment 1.1 - Los errores encontrados son 3:
+
+	- En la línea 3, en la etiqueta -contacte- el valor del atributo -id- debe estar entre comillas: <contacte id="1">
+
+	- En la línea 6, en la etiqueta -email- falta la etiqueta de cierre: <email>pau@exemple.cat</email>
+
+	- Afecta a las líneas 8 y 12. Hay creada una etiqueta <Contacte id="2"> pero el cierre se hizo con </contacte>. XML es
+	sensible a mayúsculas y minúsculas, de manera que se debe cambiar la etiqueta de apertura y comenzar con "c" minúscula, o bien
+	cambiar la etiqueta de cierre y ponerla con "C" mayúscula. Dado que hay una etiqueta previa llamada -contacte- con minúscula que 	representa el mismo concepto es adecuado que se mantenga el mismo nombre y formato. Así pues optaremos por modificar la línea 8
+	pasando a ser <contacte id="2">
+
+	
+
+Fragment 1.1 - Corregido:
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+  <contacte id="1">
+    <nom>Pau Ferrer</nom>
+    <telefon>600 123 456</telefon>
+    <email>pau@exemple.cat</email>
+  </contacte>
+  <contacte id="2">
+    <nom>Rita Camps</nom>
+    <telefon>677 987 654</telefon>
+    <email>rita@exemple.cat</email>
+  </contacte>
+</agenda>
+
+
+
+Fragment 1.2 - Los errores encontrados son 2:
+
+	- En la línea 3, en la etiqueta -classe- la etiqueta de cierre es incorrecta, debería ser: </classe>.
+
+	- En la línea 6, en la etiqueta -dia- el valor del atributo -nom debe estar entre comillas: <dia nom="Dimarts">
+
+	- No es un error pero cabe mencionar que al comienzo del código no está la declaración del XML. Al no estar, cualquier
+	programa que analice código (XML Validator en codebeautify por ejemplo) asumen la versión 1.0 y la codificación UTF-8.
+
+
+
+Fragment 1.2 - Corregido:
+
+
+<horari>
+  <dia nom="Dilluns">
+    <classe inici="08:00" fi="09:00">Matemàtiques</classe>
+    <classe inici="09:00" fi="10:00">Anglès</classe>
+  </dia>
+  <dia nom="Dimarts">
+    <classe inici="10:00" fi="11:00">Història</classe>
+  </dia>
+</horari>
+
+
+
+

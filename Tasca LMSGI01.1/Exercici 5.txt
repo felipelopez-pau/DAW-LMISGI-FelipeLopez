@@ -1,0 +1,42 @@
+{
+  "enquestes": [
+    {
+      "id":1,
+      "titol":"Redes Sociales",
+      "activa":true,
+      "preguntes":[
+        {
+          "ordre":1,
+          "text":"¿Eres usuario de redes sociales?",
+          "tipus":"opcio_multiple",
+          "opcions":["Sí", "No", "Ocasional"]
+        },{
+          "ordre":2,
+          "text":"¿Cuántas horas pasas al día en redes?",
+          "tipus":"text_lliure"
+        }
+      ]
+  },{
+    "id":2,
+    "titol":"Movilidad Urbana",
+    "activa":true,
+    "preguntes":[
+      {
+        "ordre":1,
+        "text":"¿Dispones de vehículo para desplazarte?",
+        "tipus":"opcio_multiple",
+        "opcions":["Coche", "Moto", "Ninguno"]
+      },{
+        "ordre":2,
+        "text":"Para ir al trabajo, ¿Cómo te desplazas?",
+        "tipus":"opcio_multiple",
+        "opcions":["Vehículo personal", "Transporte Público", "A Pie/Bicicleta"]
+      },{
+        "ordre":3,
+        "text":"¿Cómo se podría solucionar el problema del tráfico en la ciudad?",
+        "tipus":"text_lliure"
+      }
+    ]
+  }
+  ]
+}
